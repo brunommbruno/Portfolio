@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 
 body {
   margin: 0;
@@ -24,11 +25,13 @@ code {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 0.8rem;
+  padding-bottom: 16vh;
 }
 
 .main-navbar a {
   margin: 0rem 1rem 0rem 1rem;
   color: black;
+  border-bottom: 2px solid transparent;
 }
 
 .main-navbar a:visited {
@@ -38,6 +41,35 @@ code {
 .main-navbar a:hover {
   text-decoration: none;
   border-bottom: 2px solid rgba(61, 61, 61, 0.521);
-  transform: scale(1.1);
-  transition: 0.5s;
+}
+
+.home-jumbo {
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.home-jumbo h1 {
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+
+.home-jumbo p {
+  margin-top: 2rem;
+  padding: 0rem 35vh 0rem 35vh;
+}
+
+.home-jumbo .jumbo-underline {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+  padding: 0rem 18rem 0rem 18rem;
+}
+
+.home-jumbo .jumbo-links {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.home-jumbo .jumbo-links img {
+  height: 1.6rem;
+  margin: 0rem 0.6rem 0rem 0.6rem;
 }
