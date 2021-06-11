@@ -3,6 +3,10 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
+import mailIcon from "../img/mail.png";
+
+import { Container, Row, Col } from "react-bootstrap";
+
 const ContactForm = () => {
   const { register, errors, handleSubmit, reset } = useForm();
 
@@ -44,19 +48,32 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="ContactForm">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 text-center">
-            <div className="contactForm">
-              <form
-                id="contact-form"
-                onSubmit={handleSubmit(onSubmit)}
-                noValidate
-              >
-                {/* Row 1 of form */}
-                <div className="row formRow">
-                  <div className="col-6">
+    <>
+      <div className="line" id="contacts">
+        <span className="jumbo-underline text-center" />
+      </div>
+      <div className="contact-form">
+        <Container>
+          <Row>
+            <Col>
+              <h1>Contact</h1>
+              <img src={mailIcon} alt="mail icon" />
+              <h2>Leave me a message</h2>
+              <p>
+                Or contact me personally through my email:{" "}
+                <span>brunommbruno@gmail.com </span>
+                or through my <span>Linkedin</span>
+              </p>
+            </Col>
+            <Col>
+              <div className=" text-center">
+                <div className="contactForm">
+                  <form
+                    id="contact-form"
+                    onSubmit={handleSubmit(onSubmit)}
+                    noValidate
+                  >
+                    {/* Row 1 of form */}
                     <input
                       type="text"
                       {...register("name", {
@@ -70,62 +87,59 @@ const ContactForm = () => {
                         },
                       })}
                       className="form-control formInput"
-                      placeholder="Name"
+                      placeholder="Your Name"
                     />
                     {/* {errors.name && (
                       <span className="errorMessage">
                         {errors.name.message}
                       </span> */}
                     {/* )} */}
-                  </div>
-                  <div className="col-6">
-                    <input
-                      type="email"
-                      {...register("email", {
-                        required: {
-                          value: true,
-                          pattern:
-                            /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                        },
-                      })}
-                      className="form-control formInput"
-                      placeholder="Email address"
-                    ></input>
-                    {/* {errors.email && (
+                    <div className="">
+                      <input
+                        type="email"
+                        {...register("email", {
+                          required: {
+                            value: true,
+                            pattern:
+                              /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                          },
+                        })}
+                        className="form-control formInput"
+                        placeholder="Email Address"
+                      ></input>
+                      {/* {errors.email && (
                       <span className="errorMessage">
                         Please enter a valid email address
                       </span>
                     )} */}
-                  </div>
-                </div>
-                {/* Row 2 of form */}
-                <div className="row formRow">
-                  <div className="col">
-                    <input
-                      type="text"
-                      {...register("subject", {
-                        required: {
-                          value: true,
-                          message: "Please enter a subject",
-                        },
-                        maxLength: {
-                          value: 75,
-                          message: "Subject cannot exceed 75 characters",
-                        },
-                      })}
-                      className="form-control formInput"
-                      placeholder="Subject"
-                    ></input>
-                    {/* {errors.subject && (
+                    </div>
+
+                    {/* Row 2 of form */}
+
+                    <div className="">
+                      <input
+                        type="text"
+                        {...register("subject", {
+                          required: {
+                            value: true,
+                            message: "Please enter a subject",
+                          },
+                          maxLength: {
+                            value: 75,
+                            message: "Subject cannot exceed 75 characters",
+                          },
+                        })}
+                        className="form-control formInput"
+                        placeholder="Subject"
+                      ></input>
+                      {/* {errors.subject && (
                       <span className="errorMessage">
                         {errors.subject.message}
                       </span>
                     )} */}
-                  </div>
-                </div>
-                {/* Row 3 of form */}
-                <div className="row formRow">
-                  <div className="col">
+                    </div>
+                    {/* Row 3 of form */}
+
                     <textarea
                       rows={3}
                       {...register("message", {
@@ -139,17 +153,15 @@ const ContactForm = () => {
                         Please enter a message
                       </span>
                     )} */}
-                  </div>
+                    <button type="submit">Submit</button>
+                  </form>
                 </div>
-                <button className="submit-btn" type="submit">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
-    </div>
+    </>
   );
 };
 

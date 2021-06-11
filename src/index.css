@@ -63,7 +63,7 @@ code {
   padding: 0rem 35vh 0rem 35vh;
 }
 
-.home-jumbo .jumbo-underline {
+.jumbo-underline {
   border-bottom: 1px solid rgba(128, 128, 128, 0.404);
   padding: 0rem 18rem 0rem 18rem;
 }
@@ -127,4 +127,58 @@ code {
 .project .card a {
   font-weight: bold;
   color: rgb(71, 132, 151);
+}
+
+.contact-form {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-form img {
+  height: 2.5rem;
+  margin-left: 1rem;
+}
+
+.contact-form input {
+  margin-bottom: 1rem;
+}
+
+.contact-form h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.658);
+}
+
+.contact-form p {
+  margin-top: 1rem;
+}
+
+.contact-form h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.contact-form span {
+  font-weight: bold;
+}
+
+.contact-form button {
+  color: rgba(0, 0, 0, 0.747);
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.719);
+  width: 50%;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
+}
+
+.line {
+  text-align: center;
 }
