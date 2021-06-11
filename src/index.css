@@ -10,7 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./img/background.jpg");
   background-size: cover;
-  padding: 1rem 4rem 0rem 4rem;
+  padding: 1rem 0rem 0rem 0rem;
 }
 
 code {
@@ -79,6 +79,7 @@ code {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.3rem;
   text-align: center;
+  margin: 10rem;
 }
 
 .skills h2 {
@@ -94,4 +95,14 @@ code {
 
 .skills .f {
   border-right: 1px solid rgba(128, 128, 128, 0.404);
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin-bottom: 2rem;
 }
