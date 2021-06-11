@@ -62,7 +62,17 @@ const ContactForm = () => {
               <p>
                 Or contact me personally through my email:{" "}
                 <span>brunommbruno@gmail.com </span>
-                or through my <span>Linkedin</span>
+                or through my{" "}
+                <span>
+                  {" "}
+                  <a
+                    href="https://www.linkedin.com/in/bruno-bruno-498138200/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Linkedin
+                  </a>
+                </span>
               </p>
             </Col>
             <Col>

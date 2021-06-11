@@ -185,6 +185,16 @@ code {
   font-weight: bold;
 }
 
+.contact-form a {
+  font-weight: bold;
+  color: black;
+}
+
+.contact-form a:hover {
+  color: black;
+  text-decoration-color: black;
+}
+
 .contact-form button {
   color: rgba(0, 0, 0, 0.747);
   background-color: white;
