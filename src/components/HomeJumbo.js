@@ -12,10 +12,10 @@ const HomeJumbo = () => {
       </p>
       <span className="jumbo-underline" />
       <div className="jumbo-links">
-        <a href="">
+        <a href="https://github.com/brunommbruno">
           <img alt="github icon" src={githubIcon} />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/bruno-bruno-498138200/">
           {" "}
           <img alt="linked in icon" src={linkedInIcon} />
         </a>
