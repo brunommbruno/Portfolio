@@ -44,13 +44,13 @@ code {
 
 .main-navbar a:hover {
   text-decoration: none;
-  border-bottom: 2px solid rgba(61, 61, 61, 0.521);
+  border-bottom: 2px solid rgba(61, 61, 61, 0.589);
 }
 
 .home-jumbo {
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
-  height: 80vh;
+  height: 70vh;
 }
 
 .home-jumbo h1 {
@@ -181,4 +181,15 @@ code {
 
 .line {
   text-align: center;
+}
+
+.footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.753);
+  padding: 12vh;
+  color: white;
+}
+
+.footer span {
+  color: grey;
 }
