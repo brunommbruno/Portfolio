@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
 import mailIcon from "../img/mail.png";
@@ -8,7 +8,7 @@ import mailIcon from "../img/mail.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const ContactForm = () => {
-  const { register, errors, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const toastifySuccess = () => {
     toast("Form sent!", {
