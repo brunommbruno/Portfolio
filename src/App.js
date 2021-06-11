@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import HomeJumbo from "./components/HomeJumbo";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HomeJumbo />
       <Skills />
       <Projects />
+      <ContactForm />
     </div>
   );
 }

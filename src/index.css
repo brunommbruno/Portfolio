@@ -13,6 +13,10 @@ body {
   padding: 1rem 0rem 0rem 0rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -118,4 +122,9 @@ code {
 
 .project .card img:hover {
   transform: scale(1.1);
+}
+
+.project .card a {
+  font-weight: bold;
+  color: rgb(71, 132, 151);
 }
