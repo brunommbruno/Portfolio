@@ -55,7 +55,7 @@ const ContactForm = () => {
       <div className="contact-form">
         <Container>
           <Row>
-            <Col>
+            <Col className="contact-info">
               <h1>Contact</h1>
               <img src={mailIcon} alt="mail icon" />
               <h2>Leave me a message</h2>
