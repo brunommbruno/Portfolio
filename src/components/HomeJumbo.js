@@ -2,7 +2,7 @@ import githubIcon from "../img/github.png";
 import linkedInIcon from "../img/linkedin.png";
 const HomeJumbo = () => {
   return (
-    <div className="home-jumbo">
+    <div className="home-jumbo" id="home">
       <h1> Web Developer </h1>
       <h1> Bruno Bruno</h1>
       <p>

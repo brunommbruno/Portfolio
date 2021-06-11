@@ -1,11 +1,11 @@
 const Navbar = () => {
   return (
     <div className="main-navbar">
-      <a href="asd">HOME</a>
-      <a href="asd">ABOUT</a>
-      <a href="asd">SKILLS</a>
-      <a href="asd">PROJECTS</a>
-      <a href="asd">CONTACTS</a>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contacts">CONTACTS</a>
     </div>
   );
 };

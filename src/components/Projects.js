@@ -2,7 +2,7 @@ import Project from "./Project";
 import { Container } from "react-bootstrap";
 const Projects = () => {
   return (
-    <Container className="projects">
+    <Container className="projects" id="projects">
       <Project
         title={"RelaxMe"}
         image={"https://i.imgur.com/4NoFXCd.png"}
